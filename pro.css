@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#nav{
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+    position: relative;
+}
+#nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+#nav ul li{
+    display: inline-flex;
+    text-align: right;
+    margin: 20px 22px;
+}
+#nav ul li a{
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+#active, #nav ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+/*---------Circle leftside--------*/
+#circle{
+    background: black;
+    border-radius: 0%;
+    width: 127vh;
+    height: 100vh;
+    margin-top: -365px;
+    margin-left: -10px;
+    flex: 100; 
+    overflow: hidden;
+}
+/*---------right side--------*/
+#header3{
+    min-height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(-45deg,  white, black, gray, black, white);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 15s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+#nam{
+    padding-right: -100px;
+}
+#names{
+    text-align: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+    padding-right: 50px;
+    padding-top: 35vh;
+    padding-left: 900px;
+    color: white;
+}
+#btn{
+    border-style: inset;
+}
+#btn:hover{
+    border-style: unset;
+}
+#btn a{
+    color: black;
+    text-decoration: none;
+    font-size: x-small;
+    font-weight: bold;
+}
+/*--------Leftside---------*/
+#headera{
+    color: white;
+    margin-left: 340px;
+    margin-top: 100px;
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+}
+#image{
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px -10px 20px white, 0 6px 6px white;
+}
+#groupedcards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+#cards{
+    flex-basis: 27%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 1s;
+    position: relative;
+}
+#info{
+    opacity: 0;
+    transition: opacity 1s;
+    color: white;
+}
+#cards:hover #info{
+    opacity: 1;
+}
+#cards:hover{
+    transform: translateY(-30px);
+}
+/*------------Arrow---------*/
+#play{
+    width: 50px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@media(orientation: portrait), (max-width: 900px){
+    *{
+        padding: 0;
+        margin: 0; 
+        max-width: 900px !important;
+        overflow: visible;
+        
+    }
+    #image{
+        height: 800px;
+        width: 640px;
+        border-radius: 10px;
+        box-shadow: 0px -10px 20px white, 0 6px 6px white;
+    }
+    #info{
+        font-size: 50px;
+    }
+    #groupedcards{
+        display: inline-block;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-left: 100px;
+    } 
+    #cards{
+        flex-basis: 27%;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 1s;
+        margin-top: 40px;
+    }   
+    #nav ul{
+        flex: 1;
+        text-align: center;
+    }
+    #nav ul li{
+        display: inline-flex;
+        text-align: center;
+        margin: 20px 10px;
+        padding-right: 20px;
+        border-right: 2px solid white;
+    }
+    #nav ul li a{
+        padding: 0px 10px 0px 10px;
+        font-size: 50px;
+    }
+    #nav ul li:last-child{
+        border-right: none;
+    }
+    #headera{
+        color: white;
+        margin-left: 220px;
+        margin-top: 30px;
+        width: 400px;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+    }
+    #names{
+        display: none;
+    }
+    /*---------Circle leftside--------*/
+    #circle{
+        background: black;
+        border-radius: 0%;
+        width: 900px;
+        height: 820vh;
+        margin-top: 100px;
+        margin-left: 0px;
+        flex: 100; 
+        overflow: hidden;
+    }
+    /*---------right side--------*/
+    #header3{
+        min-height: 820vh;
+        max-height: 820vh;
+        width: 900px;
+        background: linear-gradient(-45deg,  white, black, gray, black, white);
+        background-size: 400% 400%;
+        position: relative;
+        animation: change 15s ease-in-out infinite;
+    }
+    /*------------Arrow---------*/
+    #play{
+        width: 150px;
+        position: absolute;
+        bottom: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}

@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#nav{
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+    position: relative;
+}
+#nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+#nav ul li{
+    display: inline-flex;
+    text-align: right;
+    margin: 20px 22px;
+}
+#nav ul li a{
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+#active, #nav ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+/*---------Circle leftside--------*/
+#circle{
+    background: black;
+    border-radius: 0%;
+    width: 127vh;
+    height: 100vh;
+    margin-top: -365px;
+    margin-left: -10px;
+    flex: 100; 
+    overflow: hidden;
+}
+#circle h1{
+    color: white;
+}
+#infoa{
+    color: white;
+    margin-left: 310px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/*---------right side--------*/
+#header6{
+    min-height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(-45deg, white, black, gray, black, white);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 15s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+#nam{
+    padding-right: -100px;
+}
+#names{
+    text-align: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+    padding-right: 50px;
+    padding-top: 35vh;
+    padding-left: 900px;
+    color: white;
+}
+#btn{
+    border-style: inset;
+}
+#btn:hover{
+    border-style: unset;
+}
+#btn a{
+    color: black;
+    text-decoration: none;
+    font-size: x-small;
+    font-weight: bold;
+}
+/*---------------contacts-------------*/
+#contactsa{
+    width: 350px;
+    border-right: solid white;
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 70vh;
+}
+#contactIn{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+#no{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    color: white;
+}
+/*---------------form---------------*/
+#name-label{
+    color: white;
+}
+#email-label{
+    color: white;
+}
+#contacts-label{
+    color: white;
+}
+h3{
+    color: white;
+}
+#form{
+    width: 300px;
+    margin-top: -70vh;
+    margin-left: 470px;    
+}
+#information{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#informationb{
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 200px;
+}
+#comments{
+    width: 250px;
+    height: 170px;
+}
+#sub{
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-bottom: 20px;
+}
+#submit{
+    border-style: inset;
+}
+#submit:hover{
+    border-style: unset;
+}
+/*----------Social Media----------*/
+#social{
+    text-decoration: none;
+    color: white;
+}
+#media a{
+    text-decoration: none;
+}
+@media(orientation: portrait), (max-width: 900px){
+    *{
+        padding: 0;
+        margin: 0; 
+        max-width: 900px !important;
+        overflow: visible;
+    }
+    #nav ul{
+        flex: 1;
+        text-align: center;
+    }
+    #nav ul li{
+        display: inline-flex;
+        text-align: center;
+        margin: 20px 10px;
+        padding-right: 20px;
+        border-right: 2px solid white;
+
+    }
+    #nav ul li a{
+        font-size: 50px;
+    }
+    #nav ul li:last-child{
+        border-right: none;
+    }
+    #header6{
+        min-height: 820vh;
+        max-height: 820vh;
+        width: 900px;
+        background: linear-gradient(-45deg,  white, black, gray, black, white);
+        background-size: 400% 400%;
+        position: relative;
+        animation: change 15s ease-in-out infinite;
+        
+    }
+    #names{
+        display: none;
+    }
+    #contactIn{
+        font-size: 40px;
+        margin-top: 0px;
+    }
+    #circle{
+        background: black;
+        border-radius: 0%;
+        width: 900px;
+        height: 820vh;
+        margin-top: 50px;
+        margin-left: 0px;
+        flex: 100; 
+        overflow: hidden;
+    }
+    #form{
+        width: 300px;
+        margin-top: 100vh;
+        margin-left: 0px;    
+    }
+    #contactsa{
+        border-right: none;
+        text-align: center;
+        margin-left: 200px;
+    }
+    #contactIn{
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        margin-left: 0px;
+    }
+    #app{
+        margin-left: -80px;
+        display: none;
+    }
+    #mail{
+        margin-left: -100px;
+    }
+    #infoa{
+        font-size: 30px;
+        width: 300px;
+        margin-left: 230px;
+    }
+    /*---------------form---------------*/
+    #name-label{
+        color: white;
+        font-size: 35px;
+    }
+    #name{
+        width: 500px;
+        height: 40px;
+        font-size: 35px;
+    }
+    #email-label{
+        color: white;
+        font-size: 35px;
+    }
+    #email{
+        width: 500px;
+        height: 40px;
+        font-size: 35px;
+    }
+    #contacts-label{
+        color: white;
+        font-size: 35px;
+    }
+    #contacts{
+        width: 500px;
+        height: 40px;
+        font-size: 35px;
+    }
+    h3{
+        color: white;
+    }
+    #form{
+        width: 850px;
+        margin-top: 700px;
+        margin-left: 50px;  
+        height: 900px;  
+    }
+    #information{
+        padding-top: 20px;
+        padding-left: 20px;
+        width: 825px;
+        height: 200px;
+
+    }
+    #informationb{
+        padding-top: 20px;
+        padding-left: 20px;
+        height: 600px;
+    }
+    #comments{
+        width: 800px;
+        height: 578px;
+        font-size: 35px;
+    }
+    #sub{
+        padding-top: 100px;
+        padding-left: 300px;
+        padding-bottom: 20px;
+       
+    }
+    #submit{
+        border-style: inset;
+        height: 100px;
+        width: 200px;
+        font-size: 35px;
+    }
+    #submit:hover{
+        border-style: unset;
+        height: 100px;
+        width: 200px;
+        font-size: 50px;
+    }
+}

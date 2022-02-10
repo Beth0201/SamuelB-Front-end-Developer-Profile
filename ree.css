@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#nav{
+    text-align: right;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+    position: relative;
+}
+#nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+#nav ul li{
+    display: inline-flex;
+    text-align: right;
+    margin: 20px 22px;
+}
+#nav ul li a{
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+#active, #nav ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+/*---------Circle leftside--------*/
+#circle{
+    background: black;
+    border-radius: 0%;
+    width: 127vh;
+    height: 100vh;
+    margin-top: -365px;
+    margin-left: -10px;
+    flex: 100; 
+    overflow: hidden;
+}
+/*---------right side--------*/
+#header2{
+    min-height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(-45deg,  white, black, gray, black, white);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 15s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+#nam{
+    padding-right: -100px;
+}
+#names{
+    text-align: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+    padding-right: 50px;
+    padding-top: 35vh;
+    padding-left: 900px;
+    color: white;
+}
+#btn{
+    border-style: inset;
+}
+#btn:hover{
+    border-style: unset;
+}
+#btn a{
+    color: black;
+    text-decoration: none;
+    font-size: x-small;
+    font-weight: bold;
+}
+
+#bar{
+    background: black;
+    width: 250px;
+    height: 800px;
+    flex: 100; 
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 3%;
+    box-shadow: 0 -10px 20px white, 0 6px 6px white;
+}
+#pic{
+    width: 250px;
+    height: 190px;
+    border-radius: 3%;
+    margin-top: 0px;
+    margin-left: 0px; 
+}
+#resume{
+    background: black;
+    width: 530px;
+    height: 800px;
+    flex: 100; 
+    margin-left: 286px;
+    margin-top: -800px;
+    border-radius: 2%;
+    position: absolute;
+    box-shadow: 0 -10px 20px white, 0 6px 6px white;
+}
+#info{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+#info p{
+    text-decoration: none;
+}
+/*-----------Social Medial-----------*/
+#social{
+    text-decoration: none;
+    color: white;
+}
+#media a{
+    text-decoration: none;
+}
+#aboutme{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    width: 430px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+#aboutme p ul li{
+    margin-left: 20px;
+}
+#points{
+    margin-left: 0px;
+    color: white;
+}
+#btnre{
+    border-style: inset;
+}
+#btnre:hover{
+    border-style: unset;
+}
+#btnre a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+@media(orientation: portrait), (max-width: 900px){
+    *{
+        padding: 0;
+        margin: 0; 
+        max-width: 900px !important;
+        overflow: visible;
+    }
+    #nav ul{
+        flex: 1;
+        text-align: center;
+    }
+    #nav ul li{
+        display: inline-flex;
+        text-align: center;
+        margin: 20px 10px;
+        padding-right: 20px;
+        border-right: 2px solid white;
+    }
+    #nav ul li:last-child{
+        border-right: none;
+    }
+    #nav ul li a{
+        padding: 0px 10px 0px 10px;
+        font-size: 30px;
+    }
+    #circle{
+        background:purple;
+        border-radius: 10px;
+        width: 350px;
+        height: 100vh;
+        margin-top: 0px;
+        margin-left: 10px;
+        flex: 100; 
+        overflow: visible;
+    }
+    #resume{
+        background: black;
+        width: 500px;
+        height: 1000px;
+        flex: 100; 
+        margin-left: 370px;
+        margin-top: -1000px;
+        border-radius: 2%;
+        position: absolute;
+        box-shadow: 0 -10px 20px white, 0 6px 6px white;
+    }
+    #points li{
+        list-style: none;
+    }
+    #info{
+        color: white;
+        justify-content: center;
+        text-align: center;
+        width: 350px;
+        margin-left: -30px;
+        padding-top: 20px;
+        font-size: x-large;
+    }
+    #bar{
+        background: black;
+        width: 350px;
+        height: 1000px;
+        flex: 100; 
+        margin-left: 0px;
+        margin-top: 10px;
+        border-radius: 3%;
+        box-shadow: 0 -10px 20px white, 0 6px 6px white;
+    }
+    #pic{
+        width: 350px;
+        height: 290px;
+        border-radius: 3%;
+        margin-top: 0px;
+        margin-left: 0px; 
+    }
+    #aboutme{
+        color: white;
+        justify-content: center;
+        text-align: center;
+        width: 350px;
+        margin-top: 40px;
+        margin-left: 70px;
+        font-size: large;
+    }
+    #names{
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        align-content: center;
+        padding-right: 50px;
+        margin-top: -9vh;
+        padding-left: 20px;
+        color: white;
+        width: 300px;
+    }
+    #header2{
+        min-height: 325vh;
+        max-height: 325vh;
+        width: 900px;
+        background: linear-gradient(-45deg,  white, black, gray, black, white);
+        background-size: 400% 400%;
+        position: relative;
+        animation: change 15s ease-in-out infinite;
+    }
+}
+@media(max-width: 900px){
+    *{
+        padding: 0;
+        margin: 0; 
+        max-width: 900px;
+    } 
+}
