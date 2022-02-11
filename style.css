@@ -102,8 +102,8 @@
     border-radius: 0%;
     width: 132vh;
     height: 102vh;
-    margin-top: -473.5px;
-    margin-left: -45px;
+    margin-top: -443.5px;
+    margin-left: -10px;
     flex: 100; 
     overflow: hidden;
 }
@@ -131,7 +131,7 @@
 #navigation-manual{
     position: absolute;
     display: flex;  
-    margin-left: 350px;
+    margin-left: 300px;
     margin-top:-93.5px;
     display: flex;
 }
@@ -185,8 +185,8 @@
 #navigation-auto{
     position: absolute;
     display: flex;
-    margin-left: 350px;
-    margin-top: 575px;
+    margin-left: 300px;
+    margin-top: 544px;
 }
 #navigation-auto div{
     border: 2px solid white;
@@ -289,13 +289,13 @@
         width: 900px;
     }
     #nam{
-        padding-right: -100px;
+        padding-right: 30px;
     }
     #names{
         position: absolute;
         padding-right: 30px;
         padding-top: 45vh;
-        margin-left: -900px;
+        margin-left: -770px;
         margin-top: 660px;
         color: white;
         font-size: 40px;
@@ -304,26 +304,26 @@
         width: 600px;
         display: block;
         position: absolute;
-        margin-left: 100px;
+        margin-left: 35px;
 
     }
     #hr2{
         width: 300px;
         display: block;
         position: block;
-        margin-left: 00px;
+        margin-left: 185px;
     }
     #hr3{
         width: 150px;
         display: block;
         position: absolute;
-        margin-left: 350px;
+        margin-left: 265px;
     }
     #hr4{
         width: 75px;
         display: block;
         position: absolute;
-        margin-left: 390px;
+        margin-left: 305px;
     }
     #btn1{
         border-style: inset;
