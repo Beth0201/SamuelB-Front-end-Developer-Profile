@@ -32,6 +32,29 @@
     text-decoration: underline;
     color: white;
 }
+/*-------------------------------Sub Menus Starts------------------------*/
+#subAbout{
+    display: none;
+}
+#about:hover #subAbout{
+    display: block;
+    text-align: left;
+    position: absolute;
+    margin-left: -50px;
+}
+#about:hover #subAbout ul{
+    display: block;
+}
+#about:hover #subAbout ul li{
+    border-bottom: solid;
+    color: rgb(255, 255, 255);
+}
+#about:hover #subAbout ul li:last-child{
+    border-bottom: none;
+    color: rgb(255, 255, 255);
+}
+/*-------------------------------Sub Menus Ends------------------------*/
+
 /*---------Circle leftside--------*/
 #circle{
     background: black;

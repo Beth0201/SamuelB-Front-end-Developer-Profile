@@ -32,6 +32,34 @@
     text-decoration: underline;
     color: white;
 }
+/*-------------------------------Sub Menus Starts------------------------*/
+#subAbout{
+    display: none;
+}
+#about:hover #subAbout{
+    display: block;
+    text-align: center;
+    position: absolute;
+    margin-left: -4px;
+    margin-top: 10px;
+}
+#about:hover #subAbout ul{
+    display: block;
+}
+#about:hover #subAbout ul li{
+    border-bottom: solid;
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+    text-align: left;
+    justify-content: center;
+}
+#about:hover #subAbout ul li:last-child{
+    border-bottom: none;
+    color: rgb(255, 255, 255);
+}
+/*-------------------------------Sub Menus Ends------------------------*/
 /*-------right side--------*/
 #header{
     min-height: 100vh;
