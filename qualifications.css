@@ -10,9 +10,6 @@
     position: relative;
     margin-right: 70px;
 }
-#nav2{
-    display: none;
-}
 #nav ul{
     flex: 1;
     text-align: right;
@@ -39,45 +36,38 @@
     background: black;
     border-radius: 0%;
     width: 127vh;
-    height: 109vh;
-    margin-top: -415px;
-    margin-left: 0px;
-    flex: 100; 
-    overflow: hidden;
-}
-#circleA{
-    background: black;
-    border-radius: 0%;
-    width: 127vh;
-    height: 102vh;
-    margin-top: -403px;
+    height: 100vh;
+    margin-top: -410px;
     margin-left: 0px;
     flex: 100; 
     overflow: hidden;
 }
 #circle2{
-    display: none;
+    background: black;
+    border-radius: 0%;
+    width: 127vh;
+    height: 100vh;
+    margin-top: -384px;
+    margin-left: 0px;
+    flex: 100; 
+    overflow: hidden;
 }
 /*---------right side--------*/
 #header3{
-    min-height: 91vh;
-    max-height: 110vh;
-    background: linear-gradient(-45deg,  white, black, gray, black, white);
-    background-size: 400% 400%;
-    position: relative;
-    animation: change 15s ease-in-out infinite;
-    margin-top: -70px;
-}
-#header3A{
-    min-height: 102vh;
-    max-height: 102vh;
+    min-height: 100vh;
+    max-height: 100vh;
     background: linear-gradient(-45deg,  white, black, gray, black, white);
     background-size: 400% 400%;
     position: relative;
     animation: change 15s ease-in-out infinite;
 }
 #header32{
-    display: none;
+    min-height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(-45deg,  white, black, gray, black, white);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 15s ease-in-out infinite;
 }
 @keyframes change{
     0%{
@@ -103,7 +93,16 @@
     padding-left: 900px;
     color: white;
 }
-
+#names2{
+    text-align: center;
+    align-items: center;
+    position: relative;
+    align-content: center;
+    padding-right: 50px;
+    padding-top: 35vh;
+    padding-left: 900px;
+    color: white;
+}
 #btn{
     border-style: inset;
 }
@@ -117,14 +116,11 @@
 /*--------Leftside---------*/
 #headera{
     color: white;
-    margin-left: 285px;
+    margin-left: 340px;
     margin-top: 100px;
-    width: 260px;
+    width: 150px;
     justify-content: center;
     text-align: center;
-}
-#headera2{
-    display: none;
 }
 #image{
     height: 250px;
@@ -137,15 +133,16 @@
     justify-content: space-around;
     margin-top: 100px;
 }
-#groupedcards2{
-    display: none;
-}
 #cards{
     flex-basis: 27%;
     text-align: center;
     cursor: pointer;
     transition: transform 1s;
     position: relative;
+    
+}
+#cards2{
+    display: none;
 }
 #info{
     opacity: 0;
@@ -158,14 +155,15 @@
 #cards:hover{
     transform: translateY(-30px);
 }
-/*--------play btn-------*/
+/*------------Arrow---------*/
 #play{
     width: 50px;
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 @media(orientation: portrait), (max-width: 900px){
     *{
@@ -196,7 +194,15 @@
         cursor: pointer;
         transition: transform 1s;
         margin-top: 40px;
-    }   
+    } 
+    #cards2{
+        flex-basis: 27%;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 1s;
+        margin-top: 40px;
+        display: block;
+    }  
     #nav{
         margin-left: 70px;
     }
@@ -230,28 +236,34 @@
     #names{
         display: none;
     }
+    #names2{
+        display: none;
+    }
     /*---------Circle leftside--------*/
     #circle{
         background: black;
         border-radius: 0%;
         width: 900px;
-        height: 820vh;
+        height: 1500vh;
         margin-top: 100px;
         margin-left: 0px;
         flex: 100; 
         overflow: hidden;
     }
+    #circle2{
+        display: none;
+    }
     /*---------right side--------*/
     #header3{
-        min-height: 820vh;
-        max-height: 820vh;
+        min-height: 1500vh;
+        max-height: 1500vh;
         width: 900px;
         background: linear-gradient(-45deg,  white, black, gray, black, white);
         background-size: 400% 400%;
         position: relative;
         animation: change 15s ease-in-out infinite;
     }
-    #header3A{
+    #header32{
         display: none;
     }
     /*------------Arrow---------*/
