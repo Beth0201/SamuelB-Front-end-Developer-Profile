@@ -8,6 +8,7 @@
     justify-content: right;
     display: flex;
     position: relative;
+    margin-right: 70px;
 }
 #nav ul{
     flex: 1;
@@ -36,7 +37,7 @@
     border-radius: 0%;
     width: 127vh;
     height: 100vh;
-    margin-top: -345px;
+    margin-top: -410px;
     margin-left: 0px;
     flex: 100; 
     overflow: hidden;
@@ -77,9 +78,7 @@
 #btn{
     border-style: inset;
 }
-#btn:hover{
-    border-style: unset;
-}
+
 #btn a{
     color: black;
     text-decoration: none;
@@ -155,7 +154,7 @@
         display: inline-block;
         justify-content: space-around;
         margin-top: 40px;
-        margin-left: 100px;
+        margin-left: 140px;
     } 
     #cards{
         flex-basis: 27%;
@@ -164,6 +163,9 @@
         transition: transform 1s;
         margin-top: 40px;
     }   
+    #nav{
+        margin-left: 70px;
+    }
     #nav ul{
         flex: 1;
         text-align: center;
@@ -184,7 +186,7 @@
     }
     #headera{
         color: white;
-        margin-left: 220px;
+        margin-left: 250px;
         margin-top: 30px;
         width: 400px;
         justify-content: center;

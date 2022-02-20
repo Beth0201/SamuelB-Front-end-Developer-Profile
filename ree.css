@@ -9,6 +9,7 @@
     justify-content: right;
     display: flex;
     position: relative;
+    margin-right: 50px;
 }
 #nav ul{
     flex: 1;
@@ -35,10 +36,10 @@
 #circle{
     background: black;
     border-radius: 0%;
-    width: 127vh;
-    height: 100vh;
-    margin-top: -365px;
-    margin-left: -10px;
+    width: 130vh;
+    height: 110vh;
+    margin-top: -410px;
+    margin-left: 0px;
     flex: 100; 
     overflow: hidden;
 }
@@ -78,9 +79,7 @@
 #btn{
     border-style: inset;
 }
-#btn:hover{
-    border-style: unset;
-}
+
 #btn a{
     color: black;
     text-decoration: none;
@@ -94,7 +93,7 @@
     height: 100%;
     flex: 00; 
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 60px;
     border-radius: 3%;
     box-shadow: 0 -10px 20px white, 0 6px 6px white;
 }
@@ -111,7 +110,7 @@
     height: 800px;
     flex: 100; 
     margin-left: 286px;
-    margin-top: -625px;
+    margin-top: -725px;
     border-radius: 2%;
     position: absolute;
     box-shadow: 0 -10px 20px white, 0 6px 6px white;
@@ -168,6 +167,9 @@
         margin: 0; 
         max-width: 900px !important;
         overflow: visible;
+    }
+    #nav{
+        margin-left: 70px;
     }
     #nav ul{
         flex: 1;
@@ -252,10 +254,13 @@
         position: absolute;
         align-content: center;
         padding-right: 50px;
-        margin-top: -9vh;
+        margin-top: 0vh;
         padding-left: 20px;
         color: white;
         width: 300px;
+    }
+    #brk{
+        display: none;
     }
     #header2{
         min-height: 325vh;

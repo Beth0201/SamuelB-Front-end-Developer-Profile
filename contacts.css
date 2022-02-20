@@ -8,6 +8,7 @@
     justify-content: right;
     display: flex;
     position: relative;
+    margin-right: 70px;
 }
 #nav ul{
     flex: 1;
@@ -36,7 +37,7 @@
     border-radius: 0%;
     width: 127vh;
     height: 100vh;
-    margin-top: -345px;
+    margin-top: -410px;
     margin-left: 0px;
     flex: 100; 
     overflow: hidden;
@@ -90,9 +91,7 @@
 #btn{
     border-style: inset;
 }
-#btn:hover{
-    border-style: unset;
-}
+
 #btn a{
     color: black;
     text-decoration: none;
@@ -137,6 +136,7 @@ h3{
     margin-top: -70vh;
     margin-left: 470px;    
 }
+
 #information{
     padding-top: 20px;
     padding-left: 20px;
@@ -175,6 +175,9 @@ h3{
         margin: 0; 
         max-width: 900px !important;
         overflow: visible;
+    }
+    #nav{
+        margin-left: 80px;
     }
     #nav ul{
         flex: 1;
@@ -235,19 +238,25 @@ h3{
         text-align: center;
         color: white;
         text-decoration: none;
-        margin-left: 0px;
+        margin-left: 90px;
     }
     #app{
         margin-left: -80px;
         display: none;
     }
+    #no{
+        margin-left: 0px; 
+    }
     #mail{
-        margin-left: -100px;
+        margin-left: -130px;
+    }
+    #mail1{
+        margin-left: -60px;
     }
     #infoa{
-        font-size: 30px;
+        font-size: 40px;
         width: 300px;
-        margin-left: 230px;
+        margin-left: 280px;
     }
     /*---------------form---------------*/
     #name-label{
@@ -283,7 +292,7 @@ h3{
     #form{
         width: 850px;
         margin-top: 700px;
-        margin-left: 50px;  
+        margin-left: 20px;  
         height: 900px;  
     }
     #information{

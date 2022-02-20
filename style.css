@@ -9,6 +9,7 @@
     justify-content: right;
     display: flex;
     position: relative;
+    margin-right: 60px;
 }
 #nav ul{
     flex: 1;
@@ -33,7 +34,7 @@
 }
 /*-------right side--------*/
 #header{
-    min-height: 100.6vh;
+    min-height: 100vh;
     max-height: 100vh;
     background: linear-gradient(-45deg,  white, black, gray, black, white);
     background-size: 400% 400%;
@@ -68,9 +69,7 @@
 #btn{
     border-style: inset;
 }
-#btn:hover{
-    border-style: unset;
-}
+
 #btn a{
     color: black;
     text-decoration: none;
@@ -101,8 +100,8 @@
     background: white;
     border-radius: 0%;
     width: 132vh;
-    height: 102vh;
-    margin-top: -443.5px;
+    height: 100vh;
+    margin-top: -503.5px;
     margin-left: -10px;
     flex: 100; 
     overflow: hidden;
@@ -112,7 +111,7 @@
 }
 #pic2{
     width: 132vh;
-    height: 102vh;
+    height: 100vh;
     left: 37.0%;
     top: 50%;
     z-index: 2;
@@ -155,27 +154,27 @@
 }
 #radio2:checked ~ #sliding{
     margin-left: -100%;
-    transition: 2s;
+    transition: 0s;
 }
 #radio3:checked ~ #sliding{
     margin-left: -200%;
-    transition: 2s;
+    transition: 0s;
 }
 #radio4:checked ~ #sliding{
     margin-left: -300%;
-    transition: 2s;
+    transition: 0s;
 }
 #radio5:checked ~ #sliding{
     margin-left: -400%;
-    transition: 1s;
+    transition: 0s;
 }
 #radio6:checked ~ #sliding{
     margin-left: -500%;
-    transition: 2s;
+    transition: 0s;
 }
 #radio7:checked ~ #sliding{
     margin-left: -600%;
-    transition: 2s;
+    transition: 0s;
 }
 #radio8:checked ~ #sliding{
     margin-left: -700%;
@@ -186,7 +185,7 @@
     position: absolute;
     display: flex;
     margin-left: 300px;
-    margin-top: 544px;
+    margin-top: 563px;
 }
 #navigation-auto div{
     border: 2px solid white;
@@ -237,6 +236,7 @@
         justify-content: center;
         display: flex;
         position: relative;
+        margin-left: 60px;
     }
     #nav ul{
         flex: 1;
@@ -299,6 +299,9 @@
         margin-top: 660px;
         color: white;
         font-size: 40px;
+    }
+    #brk{
+        display: none;
     }
     #hr1{
         width: 600px;
