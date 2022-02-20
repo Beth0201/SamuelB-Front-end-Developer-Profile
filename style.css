@@ -2,14 +2,13 @@
     padding: 0;
     margin: 0; 
 }
-/*------------Nav bar------------*/
+/*---------------------------------------Nav bar------------------------------------------*/
 #nav{
     text-align: right;
     align-items: right;
     justify-content: right;
-    display: flex;
-    position: relative;
-    margin-right: 60px;
+    /*------------------------------------------*/position: relative;
+    margin-right: 0px;
 }
 #nav ul{
     flex: 1;
@@ -35,32 +34,35 @@
 /*-------------------------------Sub Menus Starts------------------------*/
 #subAbout{
     display: none;
+    position: absolute;
 }
 #about:hover #subAbout{
     display: block;
-    text-align: center;
+    text-align: left;
     position: absolute;
-    margin-left: -4px;
-    margin-top: 10px;
+    margin-left: 0px;
+    margin-top: 5px;
 }
 #about:hover #subAbout ul{
     display: block;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
 }
 #about:hover #subAbout ul li{
     border-bottom: solid;
     color: rgb(255, 255, 255);
-    display: block;
-    margin-bottom: -10px;
     padding-bottom: 10px;
+    margin-bottom: -10px;
+    width: 250px;
     text-align: left;
-    justify-content: center;
+    position: relative;
 }
 #about:hover #subAbout ul li:last-child{
     border-bottom: none;
-    color: rgb(255, 255, 255);
 }
-/*-------------------------------Sub Menus Ends------------------------*/
-/*-------right side--------*/
+/*--------------------------------------Sub Menus Ends------------------------------------------*/
+/*--------------------------------------right side-------------------------------------------------*/
 #header{
     min-height: 100vh;
     max-height: 100vh;
@@ -127,7 +129,7 @@
 #circle{
     background: white;
     border-radius: 0%;
-    width: 132vh;
+    width: 125vh;
     height: 100vh;
     margin-top: -503.5px;
     margin-left: -10px;
@@ -138,7 +140,7 @@
     display: flex;
 }
 #pic2{
-    width: 132vh;
+    width: 125vh;
     height: 100vh;
     left: 37.0%;
     top: 50%;
