@@ -156,9 +156,7 @@
 #btnre{
     border-style: inset;
 }
-#btnre:hover{
-    border-style: unset;
-}
+
 #btnre a{
     text-decoration: none;
     color: black;
