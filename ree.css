@@ -32,29 +32,6 @@
     text-decoration: underline;
     color: white;
 }
-/*-------------------------------Sub Menus Starts------------------------*/
-#subAbout{
-    display: none;
-}
-#about:hover #subAbout{
-    display: block;
-    text-align: left;
-    position: absolute;
-    margin-left: -50px;
-}
-#about:hover #subAbout ul{
-    display: block;
-}
-#about:hover #subAbout ul li{
-    border-bottom: solid;
-    color: rgb(255, 255, 255);
-}
-#about:hover #subAbout ul li:last-child{
-    border-bottom: none;
-    color: rgb(255, 255, 255);
-}
-/*-------------------------------Sub Menus Ends------------------------*/
-
 /*---------Circle leftside--------*/
 #circle{
     background: black;
@@ -98,6 +75,9 @@
     padding-top: 35vh;
     padding-left: 900px;
     color: white;
+}
+#nameMedia{
+    display: none;
 }
 #btn{
     border-style: inset;
@@ -281,6 +261,10 @@
         padding-left: 20px;
         color: white;
         width: 300px;
+        display: none;
+    }
+    #nameMedia{
+        display: block;
     }
     #brk{
         display: none;
