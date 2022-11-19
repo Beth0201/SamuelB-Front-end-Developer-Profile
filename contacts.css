@@ -157,10 +157,9 @@ h3{
 }
 #submit{
     border-style: inset;
+    cursor: pointer;
 }
-#submit:hover{
-    border-style: unset;
-}
+
 /*----------Social Media----------*/
 #social{
     text-decoration: none;
